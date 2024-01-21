@@ -1,0 +1,25 @@
+[package]
+name = "wechatpay"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+aes-gcm = { version = "0.10.1", features = ["std"] }
+anyhow = "1.0.70"
+async-trait = "0.1.68"
+base64 = "0.21.0"
+bytes = "1.4.0"
+chrono = "0.4.24"
+http = "0.2.9"
+hyper = "0.14.25"
+log = "0.4.17"
+rand = "0.8.5"
+reqwest = { version = "0.11.16", features = ["json", "multipart"] }
+rsa = { version = "0.9.0", features = ["sha2"] }
+serde = { version = "1.0.159", features = ["derive"] }
+serde_json = "1.0.95"
+thiserror = "1.0.40"
+tower = { version = "0.4.13", features = ["util"] }
+x509-cert = "0.2.1"
